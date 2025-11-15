@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+a {
+  @apply text-brand-300 hover:text-brand-200 transition-colors;
+}
+
+.glass {
+  @apply to-slate-900/40 from-slate-800/30;
+  background: linear-gradient(140deg, rgba(27, 30, 51, 0.75), rgba(8, 11, 28, 0.6));
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(112, 128, 180, 0.2);
+}
